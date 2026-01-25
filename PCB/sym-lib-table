@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DEV-15583")(type "KiCad")(uri "Teensy/DEV-15583.kicad_sym")(options "")(descr ""))
+  (lib (name "RV09AF-40-20K-A10K")(type "KiCad")(uri "RV09AF-40-20K-A10K/RV09AF-40-20K-A10K.kicad_sym")(options "")(descr ""))
+  (lib (name "OLED_128X64_1.3_I2C")(type "KiCad")(uri "OLED_128X64_1.3_I2C/OLED_128X64_1.3_I2C.kicad_sym")(options "")(descr ""))
+  (lib (name "282837-3")(type "KiCad")(uri "3_pin_terminal_block/282837-3.kicad_sym")(options "")(descr ""))
+  (lib (name "1825910-6")(type "KiCad")(uri "1825910-6/1825910-6.kicad_sym")(options "")(descr ""))
+  (lib (name "NMEA2000")(type "KiCad")(uri "NMEA_Connector/54-00387.kicad_sym")(options "")(descr ""))
+)
