@@ -11,31 +11,31 @@ This platform focuses on lowering the bar for getting started with boat hacking.
 ## What's In Here
 
 ### Getting Your Feet Wet
-1. **[Project Overview](Project_Overview.md)** - What this is and why boats need better security
-2. **[Getting Started](Getting_Started.md)** - From zero to flashing firmware
-3. **[Operations Guide](Operations_Guide.md)** - How to actually use the thing
-4. **[FAQ](FAQ.md)** - "Why doesn't X work?" answered here
+1. **[Project Overview](Documentation/README.md)** - What this is and why boats need better security
+2. **[Getting Started](Documentation/Getting_Started.md)** - From zero to flashing firmware
+3. **[Operations Guide](Documentation/Operations_Guide.md)** - How to actually use the thing
+4. **[FAQ](Documentation/FAQ.md)** - "Why doesn't X work?" answered here
 
 ### Understanding the Protocols
-1. **[NMEA2000 Protocol](NMEA2000.md)** - The marine standard for device communication
+1. **[NMEA2000 Protocol](Documentation/NMEA2000.md)** - The marine standard for device communication
 
 ### Hardware
-1. **[Design Reference](PCB_Design.md)** - Schematics, layout, gerbers
-2. **[3-D Printed Case](Case_Design.md)** - Documentation on the case
+1. **[Design Reference](Documentation/PCB_Design.md)** - Schematics, layout, gerbers
+2. **[3-D Printed Case](Documentation/Case_Design.md)** - Documentation on the case
 
 ### Software
-9. **[Source Code Architecture](Source_Code_Architecture.md)** - Deep dive into the firmware
+9. **[Source Code Architecture](Documentation/Source_Code_Architecture.md)** - Deep dive into the firmware
 
 ### The Fun Part
-10. **[Security Research & Attacks](Attacks.md)** - How the attacks work and academic context
+10. **[Security Research & Attacks](Documentation/Attacks.md)** - How the attacks work and academic context
 
 
 
 ## Quick Start (TL;DR)
 
-1. Get parts from [Hardware Guide](PCB_Design.md)
-2. Flash firmware via [Getting Started](Getting_Started.md)
-3. Learn the UI in [Operations Guide](Operations_Guide.md)
+1. Get parts from [Hardware Guide](Documentation/PCB_Design.md)
+2. Flash firmware via [Getting Started](Documentation/Getting_Started.md)
+3. Learn the UI in [Operations Guide](Documentation/Operations_Guide.md)
 4. Break Stuff
 5. Profit!
 
