@@ -12,20 +12,10 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Fetch all branches and tags
-        run: |
-          git fetch origin '+refs/heads/*:refs/heads/*' --force
-          git fetch origin '+refs/tags/*:refs/tags/*' --force
-
-      - name: Mirror to GitLab
+      - name: Clone bare and push to GitLab
         env:
           GITLAB_URL: https://constantine:${{ secrets.GITLAB_TOKEN }}@gitlab.macris.me/phd/NEMO.git
         run: |
-          git remote add gitlab "$GITLAB_URL" || git remote set-url gitlab "$GITLAB_URL"
-          git push gitlab --all --force
-          git push gitlab --tags --force
+          git clone --bare https://github.com/${{ github.repository }}.git repo.git
+          cd repo.git
+          git push --mirror "$GITLAB_URL"
