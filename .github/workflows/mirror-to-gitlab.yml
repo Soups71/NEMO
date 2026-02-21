@@ -1,0 +1,26 @@
+name: Mirror to GitLab
+
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - '**'
+  delete:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mirror to GitLab
+        env:
+          GITLAB_URL: https://constantine:${{ secrets.GITLAB_TOKEN }}@gitlab.macris.me/phd/NEMO.git
+        run: |
+          git remote add gitlab "$GITLAB_URL" || git remote set-url gitlab "$GITLAB_URL"
+          git push gitlab --all --force
+          git push gitlab --tags --force
