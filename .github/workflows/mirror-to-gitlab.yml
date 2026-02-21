@@ -17,6 +17,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Fetch all branches and tags
+        run: |
+          git fetch origin '+refs/heads/*:refs/heads/*' --force
+          git fetch origin '+refs/tags/*:refs/tags/*' --force
+
       - name: Mirror to GitLab
         env:
           GITLAB_URL: https://constantine:${{ secrets.GITLAB_TOKEN }}@gitlab.macris.me/phd/NEMO.git
