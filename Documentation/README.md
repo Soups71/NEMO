@@ -112,7 +112,7 @@ This project would not be possible without the amazing work put together by [Tim
 
 ## Where To Go From Here
 
-- Learn about [CAN Bus](CAN_Bus.md) and [NMEA2000](NMEA2000.md) protocols
-- Check the [Hardware Guide](PCB_Guide.md) for build instructions
+- Learn about [NMEA2000](NMEA2000.md) protocols
+- Check the [Hardware Guide](PCB_Design.md) for build instructions
 - Follow [Getting Started](Getting_Started.md) to flash the firmware
 - Dig into the [Source Code Architecture](Source_Code_Architecture.md) if you want to hack on it
