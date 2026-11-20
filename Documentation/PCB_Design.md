@@ -134,11 +134,13 @@ These control the sensor values and attack parameters. Turn the knob, change the
 
 | Pin | Color | Function |
 |-----|-------|----------|
-| 1 | White | Shield/GND |
-| 2 | Blue | CAN_L |
-| 3 | Black | GND |
-| 4 | Red | +12V (optional power input) |
-| 5 | White | CAN_H |
+| 1 | Bare/drain | Shield |
+| 2 | Red | +12V (NET-S) |
+| 3 | Black | GND (NET-C) |
+| 4 | White | CAN_H (NET-H) |
+| 5 | Blue | CAN_L (NET-L) |
+
+On NEMO, pins 1 (shield) and 2 (+12V) are not connected. Pin 3 is connected to GND, pin 4 to CAN_H, and pin 5 to CAN_L.
 
 This connects to CAN2 (the sniffer). You can plug NEMO right into a boat's backbone.
 
